@@ -9,6 +9,7 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 
+import fi.jk.speedtest.screens.GameScreen;
 import fi.jk.speedtest.screens.StartScreen;
 
 public class SpeedTestGame extends Game {
@@ -29,7 +30,7 @@ public class SpeedTestGame extends Game {
 		camera.setToOrtho(false, VIEWPORT_WIDTH, VIEWPORT_HEIGHT);
 //        viewport = new FitViewport(VIEWPORT_WIDTH, VIEWPORT_HEIGHT, camera);
 
-		setScreen(new StartScreen(this));
+		setScreen(new GameScreen(this));
 	}
 
 //    public void onResize(int width, int height) {
